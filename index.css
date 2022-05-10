@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+.logo{
+    width: 20Opx;
+    height: 100px;
+}
+nav,ul{
+    display: flex;
+    list-style-type: none;
+}
+nav,li,a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+}
+
+.nav_links,a:hover{
+    color:rgb(10, 9, 6);
+}
+.sign-in{
+    margin-left: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding:5px 20px 5px 5px;
+}
+.sign-up{
+    margin-right: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding:5px 20px 5px 5px;
+}
+.sign-in:hover{
+    background-color: rgb(156, 154, 148);
+    color:white;
+}
+.sign-up:hover{
+    background-color: rgb(156, 154, 148);
+    color:white;
+}
+
+#section1{
+    height: 35rem;
+    background-image: url("/imagefond.png");
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+    
+}
+#section1 h1{
+    padding-top: 130px;
+}
+#section1 h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px ;
+}
+
+.call{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 200px;
+    padding: 30px;
+    
+    
+}
+.mail{
+margin-left: 400px;
+width: 50px;
+height: 50px;
+border: 2px solid white;
+border-radius: 200px;
+padding: 30px;
+}
+
+.maps{
+    margin-right: 400px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 200px;
+    padding: 30px;
+}
+.call:hover, .maps:hover, .mail:hover{
+    background-color: rgb(156, 154, 148);
+}
+#section2 h1{
+    text-align: center;
+    text-decoration: underline;
+}
+.section2-1{
+    display: flex;
+    flex-direction: calc(2,1);
+    margin-bottom: 50px;
+    
+}
+
+.section2-2{
+    display: flex;
+    flex-direction: calc(2,1);
+    margin-bottom: 50px;
+}
+
+#section2{
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.img-agency{
+    display: flex;
+}
+
+.describ{
+    text-align: start;
+}
+
+button:hover{
+    background-color: rgb(156, 154, 148);
+}
+.section2-2{
+    display: flex;
+    justify-content: space-between;
+}
+.rond1, .rond2, .rond3, .rond4{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(156, 154, 148);
+    border-radius: 200px;
+}
+.rond1-1, .rond2-1, .rond3-1, .rond4-1{
+    position: relative;
+    width: 180px;
+    height: 100px;
+    background-color: white;
+    border-radius: 200px;
+    text-align: center;
+    top: -50px;
+    right: -10px;
+    padding-top: 80px;
+}
+.rond1-2, .rond2-2, .rond3-2, .rond4-2{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 200px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    margin: 20px;
+}
+
+.project-item{
+    position: relative;
+    height: 450px;
+    width: 405px;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px rgb(160, 151, 151);
+    background-color: white;
+    margin: 1.5rem 0;
+}
+.project-item h2, h3, p, button{
+    position: relative;
+    left: 10px;
+    bottom: 0px;
+}
+
+.card-img{
+    max-width: 100%;
+    max-height: 50rem;
+}
+
+#section3 h1{
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#section3{
+    background-color:rgb(235, 231, 231);
+}
+
+.servce, h1{
+    color: #fff;
+}
+.servce, a{
+    font-size: 30px;
+}
+
+.section4 h1{
+color: black;
+}
