@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
 
 *{
-    font-family: font-family: 'IM Fell English SC', serif;
+    font-family: 'IM Fell English SC', serif;
     margin: 0;
     padding: 0;
 }
@@ -60,6 +60,7 @@ nav,li,a{
     margin-bottom: 20px;
     padding: 0px 400px 0px 400px;
     color: #fff;
+    font-size: 50px;
     
 }
 #section1 h1{
@@ -209,11 +210,14 @@ button:hover{
 
 #section3{
     background-color:rgb(235, 231, 231);
-    padding: 0px 400px 0px 400px;
+    padding: 100px 400px 0px 400px;
 }
 
 .servce, h1{
     color: #fff;
+}
+.servce ul{
+    display: flex;
 }
 .servce, a{
     font-size: 30px;
@@ -226,11 +230,12 @@ text-align: center;
 padding:20px 0px 20px 0px;
 }
 #section4{
-    padding: 0px 400px 0px 400px;
+    padding: 100px 400px 0px 400px;
 }
 .customer{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .color1{
@@ -278,6 +283,7 @@ padding:20px 0px 20px 0px;
     box-shadow: 2px 2px 2px 2px rgb(160, 151, 151);
     border-radius: 30px;
     text-align: center;
+    padding-right: 10px;
 }
 .customer2, .customer3{
     height: 850px;
@@ -300,7 +306,7 @@ padding:20px 0px 20px 0px;
 }
 footer{
     background-color: blue;
-    padding: 0px 400px 0px 400px;
+    padding: 100px 400px 0px 400px;
 }
 .footer{
     display: flex;
@@ -325,4 +331,59 @@ footer p{
     color: white;
     text-align: center;
     padding-bottom: 30px;
+}
+
+
+@media all and (max-width: 1324px)
+{
+     
+    .header, #section1, #section2,#section3, #section4, #section5, footer{
+        padding: 10px;
+    } 
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+        padding-left: 2px;
+    }
+    nav a{
+        font-size: 1.1em;
+    }
+    
+    .sign-inn,.sign-upp{
+        flex-direction: column;
+      
+        font-size: 1em;
+    }
+    .sign-upp:last-child{
+        text-align: center;
+      
+    }
+    .project{
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .project-item{
+        margin-top: 20px;
+    }
+    .customer{
+        flex-direction: column;
+        padding-left: 10px;
+        margin-left: 155px;
+    }
+    .customer1, .customer2, .customer3{
+        margin-top: 20px;
+    }
+    .servce a{
+        flex-direction: column;
+    }
+    body{
+        width: 100%;
+        margin: auto;
+    }
 }
