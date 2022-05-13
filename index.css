@@ -14,7 +14,7 @@
     padding: 0px 300px 0px 300px;
 }
 .logo{
-    width: 20Opx;
+    width: 200px;
     height: 100px;
 }
 nav,ul{
@@ -51,6 +51,7 @@ nav,li,a{
     color:white;
 }
 
+
 #section1{
     height: 35rem;
     background-image: url("/imagefond.png");
@@ -63,10 +64,10 @@ nav,li,a{
     font-size: 50px;
     
 }
-#section1 h1{
+#section1 h2{
     padding-top: 130px;
 }
-#section1 h2{
+#section1 h3{
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -105,21 +106,18 @@ padding: 30px;
 .call:hover, .maps:hover, .mail:hover{
     background-color: rgb(156, 154, 148);
 }
-#section2 h1{
+#section2 h2{
     color: black;
     text-align: center;
     text-decoration: underline;
 }
 .section2-1{
     display: flex;
-    flex-direction: calc(2,1);
     margin-bottom: 50px;
-    
 }
 
 .section2-2{
     display: flex;
-    flex-direction: calc(2,1);
     margin-bottom: 50px;
 }
 
@@ -137,7 +135,10 @@ padding: 30px;
 .describ{
     text-align: start;
 }
-
+button{
+    border: 2px solid black;
+    background-color: white;
+}
 button:hover{
     background-color: rgb(156, 154, 148);
 }
@@ -157,12 +158,16 @@ button:hover{
     width: 180px;
     height: 100px;
     background-color: white;
+    border: 1.5px solid black;
     border-radius: 200px;
     text-align: center;
     top: -50px;
     right: -10px;
     padding-top: 80px;
+    font-size: 20px;
+    cursor: pointer;
 }
+
 .rond1-2, .rond2-2, .rond3-2, .rond4-2{
     position: relative;
     width: 50px;
@@ -191,7 +196,10 @@ button:hover{
     background-color: white;
    
 }
-.project-item h2, h3, p, button{
+.project-item p, button{
+    margin-top: 30px ;
+}
+.project-item h3, h4, p, button{
     position: relative;
     left: 10px;
     bottom: 0px;
@@ -202,28 +210,28 @@ button:hover{
     max-height: 50rem;
 }
 
-#section3 h1{
+#section3 h2{
     text-decoration: underline;
     text-align: center;
     padding-bottom: 20px;
 }
 
 #section3{
-    background-color:rgb(235, 231, 231);
+    background-color:#c4c4c4c4;
     padding: 100px 400px 0px 400px;
 }
 
-.servce, h1{
+ h2{
     color: #fff;
+    font-size: 50px;
 }
-.servce ul{
+
+#service{
     display: flex;
-}
-.servce, a{
     font-size: 30px;
 }
 
-#section4 h1{
+#section4 h2{
 color: black;
 text-decoration: underline;
 text-align: center;
@@ -249,7 +257,7 @@ padding:20px 0px 20px 0px;
 .color2{
     position: relative;
     width: 230px;
-    height: 220x;
+    height: 220px;
     background-color: red;
     border-radius: 200px;
     margin-left: 70px;
@@ -277,8 +285,8 @@ padding:20px 0px 20px 0px;
     top: 15px;
 }
 .customer1{
-    height: 850px;
-    width: 450px;
+    height: 650px;
+    width: 350px;
     border: 2px solid #fff;
     box-shadow: 2px 2px 2px 2px rgb(160, 151, 151);
     border-radius: 30px;
@@ -286,16 +294,19 @@ padding:20px 0px 20px 0px;
     padding-right: 10px;
 }
 .customer2, .customer3{
-    height: 850px;
-    width: 450px;
+    height: 650px;
+    width: 350px;
     text-align: center;
-    opacity: 0.4;
 }
-.customer h2{
+.customer2 p, .customer3 p{
+    opacity: 0.2;
+    margin-top: 10px
+}
+.customer h3{
     color: rgb(49, 164, 164);
 }
 
-#section5 h1{
+#section5 h2{
     color: black;
     text-decoration: underline;
     text-align: center;
@@ -305,7 +316,7 @@ padding:20px 0px 20px 0px;
     padding: 0px 400px 0px 400px;
 }
 footer{
-    background-color: blue;
+    background-color:#2B2977;
     padding: 100px 400px 0px 400px;
 }
 .footer{
@@ -314,23 +325,33 @@ footer{
 }
 
 .form{
+    width: 300px;
+    height: 50px;
     display: flex;
    margin-top: 30px;
-    border-radius: 0px 10px 10px 15px;
+    border-radius: 0px 30px 30px 35px;
 }
 
 .compagny ul{
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 .follow-us ul{
     display: flex;
     flex-direction: column;
+    margin-left: 5px;
+    cursor: pointer;
 }
 footer p{
     color: white;
     text-align: center;
     padding-bottom: 30px;
+    font-size: 50px;
+}
+.compagny a{
+    margin: 10px 0px 0px 5px;
+    font-size: 35px;
 }
 
 
@@ -374,7 +395,7 @@ footer p{
     .customer{
         flex-direction: column;
         padding-left: 10px;
-        margin-left: 155px;
+        margin-left: 100px;
     }
     .customer1, .customer2, .customer3{
         margin-top: 20px;
@@ -386,4 +407,32 @@ footer p{
         width: 100%;
         margin: auto;
     }
+    .contact{
+        display: none;
+    }
+    .section2-2{
+        display: inline-block;
+        margin-left: 100px;
+    }
+    #service{
+        font-size: 20px;
+        display: inline-block;
+    }
+    .logo{
+        margin-left: 2px;
+    }
+}
+@media all and (max-width: 900px)
+{
+.section2-1, .footer{
+    display: inline-block;
+}
+#section5,#section4, #section3, #section2, #section1, .header, footer{
+    padding: 0px 0px 0px 0px;
+}
+.sign-upp:last-child{
+    text-align: center;
+  
+}
+
 }
