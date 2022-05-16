@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin="index.js"></script>
     <title>My First Site</title>
 </head>
 <body>
     <header>
         <div class="header">
-                <a href="#"><img src="logo_InvestGroup.png" alt="logo" class="logo"></a>
+                <a href="#"><img src="image/logo_InvestGroup.png" alt="header_logo" class="header_logo"></a>
             <nav>
                 <ul class="nav_links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#section2">About</a></li>
-                    <li><a href="#section3">Projects</a></li>
-                    <li><a href="#section3">Services</a></li>
-                    <li><a href="footer">Contacts</a></li>
+                    <li><a href="#section-2">About</a></li>
+                    <li><a href="#section-3">Projects</a></li>
+                    <li><a href="#section-3">Services</a></li>
+                    <li><a href="footer">Contactss</a></li>
                 </ul>
             </nav>
             <div class="langue">
-                <select name="language" id="language-select">
+                <select name="header_defile-language" id="header_language-select">
                     <option value="English"> English</option>
                     <option value="French">French</option>
                     <option value="Spanish">Spanish</option>
@@ -32,34 +38,36 @@
                     <option value="Arabic">Arabic</option>
                 </select>
             </div>
-            <div class="sign-in">
-                 <a href="#" class="sign-inn">Sign In</a>
+            <div id="nav_connexion">
+                <div class="header_sign-in">
+                   <a href="#" class="">Sign In</a>
+                 </div>
+                <div class="header_sign-up">
+                   <a href="#" class="">Sign Up</a>
+                </div>
             </div>
-            <div class="sign-up">
-                <a href="#" class="sign-upp">Sign Up</a>
-           </div>
         </div>
     </header>
-    <section id="section1">
+    <section id="section-1">
             <h2>We'll Give Your Bussiness Fresh Ideas</h2>
-            <h3>Contact Us by</h3>
-            <div class="contact">
-                <div class="mail">
-                    <a href="mailto:mewe.sizino3@gmail.com" target="_blank" title="Envoyez-nous un mail et exprimez-vous !"><img src="Envelope1.png" alt="mail"></a>
+            <h3>Contact Us By</h3>
+            <div class="section-1_contacts">
+                <div class="section-1_mail-addresse">
+                    <a href="mailto:mewe.sizino3@gmail.com" target="_blank" title="Envoyez-nous un mail"><img src="image/Envelope1.png" alt="section-1_mail-addresse"></a>
                 </div> 
-                <div class="call">
-                    <a href="telephone:+22893869893" target="_blank" title="Appelez-Nous, nous en sserons ravi !"><img src="call.png" alt="call"></a>
+                <div class="section-1_call-addresse">
+                    <a href="telephone:+22893869893" target="_blank" title="Appelez-Nous, nous en sserons ravi !"><img src="image/call.png" alt="section-1_call-addresse"></a>
                 </div> 
-                <div class="maps">
-                    <a href="index2.html" target="_blank" title="Notre localisation"><img src="maps.png" alt="maps"></a>
+                <div class="section-1_maps-addresse">
+                    <a href="index2.html" target="_blank" title="Notre localisation"><img src="image/maps.png" alt="maps.png"></a>
                 </div> 
             </div>
     </section>
-    <section id="section2">
+    <section id="section-2">
         <h2>Welcom to Our agency</h2>
         <h4>About Invest Group</h4>
-        <div class="section2-1">
-            <div class="describ">
+        <div class="section-2_1">
+            <div class="section-2_describ">
                 <p>It is a long established fact that a reader will be distracted by the
                     readable content of a page when looking at its layout. The point
                     of using Lorem Ipsum is that it has a more-or-less normal dis
@@ -70,23 +78,23 @@
                     it look like readable English. Many desktop publishing packages and ...</p>
                     <button> MORE</button>
             </div>
-            <div class="img-agency">
-                <img src="pngegg1.png" alt="image">
+            <div class="section-2_img">
+                <img src="image/pngegg1.png" alt="image">
             </div>
         </div>
-        <div class="section2-2">
+        <div class="section-2_2">
             <div class="rond1"><div class="rond1-2">369</div><div class="rond1-1">Satisfied costomers</div></div>
             <div class="rond2"><div class="rond2-2">79</div><div class="rond2-1">Réalised Projects</div></div>
             <div class="rond3"><div class="rond1-2">1,235</div><div class="rond1-1">Hours of support</div></div>
             <div class="rond4"><div class="rond4-2">15</div><div class="rond4-1">Satisfied costomers</div></div>
         </div>
     </section>
-    <section id="section3">
+    <section id="section-3">
         <h2>Projects</h2>
         <div class="project">
             <div class="project-item">
                 <div class="card">
-                    <img src="project1.png" alt="project">
+                    <img src="image/project1.png" alt="project">
                 </div>
                 <h3>Lorelm ipsum</h3>
                 <h4>07 September 2022</h4>
@@ -95,7 +103,7 @@
             </div>
             <div class="project-item">
                 <div class="card">
-                    <img src="project2.png" alt="project">
+                    <img src="image/project2.png" alt="project">
                 </div>
                 <h3>Derto Minert</h3>
                 <h4>05 Juin 2022</h4>
@@ -104,7 +112,7 @@
             </div>
             <div class="project-item">
                 <div class="card">
-                    <img src="project3.png" alt="project">
+                    <img src="image/project3.png" alt="project">
                 </div>
                 <h3>Sedrotr Selimto</h3>
                 <h4>03 Septembre 2022</h4>
@@ -124,44 +132,46 @@
             </div>
         </div>
     </section>
-    <section id="section4">
+    <section id="section-4">
         <h2>What our customers say about us.</h2>
         <div class="customer">
             <div class="customer1">
-                <div class="color1"><img src="customer1.png" alt="customer"></div>
+                <div class="color1"><img src="image/customer1.png" alt="customer"></div>
                 <h3>Lincé WATT</h3>
                 <p>Invest Group Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum fermentum ac eu eros. Aliquam erat volutpat A nisl pulvinar, hendrerit arcu sed Invest Group Aliquam , dapibus velit. Duis ac quam id sapien vestibulum fermentum ac eu eros. Aliquam erat volutpat A nisl pulvinar, hendrerit arcu sed Invest Group Aliquam , dapibus velit. Duis ac quam id sapien vestibulum fermentum ac eu eros. Aliquam erat volutpat.</p>
             </div>
             <div class="customer2">
-                <div class="color2"><img src="customer2.png" alt="customer"></div>
+                <div class="color2"><img src="image/customer2.png" alt="customer"></div>
                 <h3>Marc BROW</h3>
                 <p> A Invest Group Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum fermentum ac eu eros. Aliquam erat volutpat A nisl pulvinar, hendrerit arcu sed Invest Group Aliquam , dapibus velit. Duis ac quam id sapien vestibulum fermentum ac eu eros. Aliquam erat volutpat A nisl pulvinar, hendrerit arcu sed Invest Group Aliquam , dapibus velit. Duis ac quam id sapien vestibulum fermentum ac eu eros. Aliquam erat volutpat.</p>
             </div>
             <div class="customer3">
-                <div class="color3"><img src="customer3.png" alt="customer"></div>
+                <div class="color3"><img src="image/customer3.png" alt="customer"></div>
                 <h3>HAchlé HANDERSONE</h3>
                 <p>A nisl pulvinar, hendrerit arcu sed Invest Group Aliquam , dapibus velit. Duis ac quam id sapien vestibulum fermentum ac eu eros. Aliquam erat volutpat A nisl pulvinar, hendrerit arcu sed Invest Group Aliquam , dapibus velit. Duis ac quam id sapien vestibulum fermentum ac eu eros. Aliquam erat volutpat A nisl pulvinar, hendrerit arcu sed Invest Group Aliquam , dapibus velit. Duis ac quam id sapien vestibulum fermentum ac eu eros. Aliquam erat volutpat.</p>
             </div>
         </div>
     </section>
-    <section id="section5">
+    <section id="section-5">
         <h2>Our Partners</h2>
-        <img src="part1.png" alt="partner">
-        <img src="part2.png" alt="partner">
-        <img src="part3.png" alt="partner">
-        <img src="part4.png" alt="partner">
-        <img src="part5.png" alt="partner">
-        <img src="part6.png" alt="partner">
-        <img src="part7.png" alt="partner">
-        <img src="part8.png" alt="partner">
+        <img src="image/part1.png" alt="partner">
+        <img src="image/part2.png" alt="partner">
+        <img src="image/part3.png" alt="partner">
+        <img src="image/part4.png" alt="partner">
+        <img src="image/part5.png" alt="partner">
+        <img src="image/part6.png" alt="partner">
+        <img src="image/part7.png" alt="partner">
+        <img src="image/part8.png" alt="partner">
     </section>
+    <section><div id="section-1_maps-addresse" style="height: 180px;"><h2>Find Us</h2></div></section>
+    <section></section>
     <footer>
         <div class="footer">
-            <div class="contact-us">
-                <h2>Contacts Us</h2>
-                <form action="contact">
+            <div class="section-1_contacts-us">
+                <h2>Contact Us</h2>
+                <form action="contacts">
                     <input type="text" name="name" class="form" placeholder="Full Name">
-                    <input type="text" name="email" class="form" placeholder="Email address">
+                    <input type="text" name="email" class="form" placeholder="Email">
                     <textarea name="area" class="form" cols="30" rows="10" placeholder="Message" style="height: 150px;"></textarea>
                 </form>
                 <div><input type="submit" value="Send" class="color"/></div>
@@ -176,16 +186,16 @@
                     <li><a href="index.html">Our customers</a></li>
                     <li><a href="index.html">Our parteners</a></li>
                     <li><a href="index.html">Our parteners</a></li>
-                    <li><a href="index.html">Contacts</a></li>
+                    <li><a href="index.html">Section-1_contactss</a></li>
                 </ul>
             </div>
             <div class="follow-us">
-                <h2>Follow-us</h2>
+                <h2>Follow-Us</h2>
                 <ul>
-                    <li><a href="https://www.facebook.com/irenee.sizin.1/"><img src="facebook1.png" alt="facebook"></a></li>
-                    <li><a href="https://twitter.com/Mewe_SIZIN"><img src="Twitter1.png" alt="twitter"></a></li>
-                    <li><a href="#"><img src="Instagram1.png" alt="Instagram"></a></li>
-                    <li><a href="https://www.linkedin.com/in/mewe-sizin-b27596228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BD%2Fc1pzhtSau%2FYFqo1MKGEg%3D%3D"><img src="Linkedi1.png" alt="Linkedin"></a></li>
+                    <li><a href="https://www.facebook.com/irenee.sizin.1/"><img src="image/facebook1.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/Mewe_SIZIN"><img src="image/Twitter1.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="Instagram1.png" alt="image/Instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/in/mewe-sizin-b27596228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_section-1_contacts_details%3BD%2Fc1pzhtSau%2FYFqo1MKGEg%3D%3D"><img src="image/Linkedi1.png" alt="Linkedin"></a></li>
                 </ul>
             </div>
         </div>

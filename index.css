@@ -13,9 +13,9 @@
     background-color: red;
     padding: 0px 300px 0px 300px;
 }
-.logo{
-    width: 200px;
-    height: 100px;
+.header_logo{
+    width: 150px;
+    height: 80px;
 }
 nav,ul{
     display: flex;
@@ -30,31 +30,33 @@ nav,li,a{
 .nav_links,a:hover{
     color:rgb(10, 9, 6);
 }
-.sign-in{
+.header_sign-in{
     margin-left: 20px;
     border: 2px solid white;
     border-radius: 50px;
     padding:5px 20px 5px 5px;
 }
-.sign-up{
+.header_sign-up{
     margin-right: 20px;
     border: 2px solid white;
     border-radius: 50px;
     padding:5px 20px 5px 5px;
 }
-.sign-in:hover{
+.header_sign-in:hover{
     background-color: rgb(156, 154, 148);
     color:white;
 }
-.sign-up:hover{
+.header_sign-up:hover{
     background-color: rgb(156, 154, 148);
     color:white;
 }
 
-
-#section1{
+#nav_connexion{
+    display: flex;
+}
+#section-1{
     height: 35rem;
-    background-image: url("/imagefond.png");
+    background-image: url("image/imagefond.png");
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -64,20 +66,20 @@ nav,li,a{
     font-size: 50px;
     
 }
-#section1 h2{
+#section-1 h2{
     padding-top: 130px;
 }
-#section1 h3{
+#section-1 h3{
     padding-top: 20px;
     padding-bottom: 10px;
 }
-.contact{
+.section-1_contacts{
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px ;
 }
 
-.call{
+.section-1_call-addresse{
     width: 50px;
     height: 50px;
     border: 2px solid white;
@@ -86,7 +88,7 @@ nav,li,a{
     
     
 }
-.mail{
+.section-1_mail-addresse{
 margin-left: 400px;
 width: 50px;
 height: 50px;
@@ -95,7 +97,7 @@ border-radius: 200px;
 padding: 30px;
 }
 
-.maps{
+.section-1_maps-addresse{
     margin-right: 400px;
     width: 50px;
     height: 50px;
@@ -103,36 +105,36 @@ padding: 30px;
     border-radius: 200px;
     padding: 30px;
 }
-.call:hover, .maps:hover, .mail:hover{
+.section-1_call-addresse:hover, .section-1_maps-addresse:hover, .section-1_mail-addresse:hover{
     background-color: rgb(156, 154, 148);
 }
-#section2 h2{
+#section-2 h2{
     color: black;
     text-align: center;
     text-decoration: underline;
 }
-.section2-1{
+.section-2_1{
     display: flex;
     margin-bottom: 50px;
 }
 
-.section2-2{
+.section-2_2{
     display: flex;
     margin-bottom: 50px;
 }
 
-#section2{
+#section-2{
     justify-content: center;
     align-items: center;
     padding: 0px 500px 0px 500px;
  
 }
 
-.img-agency{
+.section-2_img{
     display: flex;
 }
 
-.describ{
+.section-2_describ{
     text-align: start;
 }
 button{
@@ -142,7 +144,7 @@ button{
 button:hover{
     background-color: rgb(156, 154, 148);
 }
-.section2-2{
+.section-2_2{
     display: flex;
     justify-content: space-between;
 }
@@ -210,13 +212,13 @@ button:hover{
     max-height: 50rem;
 }
 
-#section3 h2{
+#section-3 h2{
     text-decoration: underline;
     text-align: center;
     padding-bottom: 20px;
 }
 
-#section3{
+#section-3{
     background-color:#c4c4c4c4;
     padding: 100px 400px 0px 400px;
 }
@@ -231,13 +233,13 @@ button:hover{
     font-size: 30px;
 }
 
-#section4 h2{
+#section-4 h2{
 color: black;
 text-decoration: underline;
 text-align: center;
 padding:20px 0px 20px 0px;
 }
-#section4{
+#section-4{
     padding: 100px 400px 0px 400px;
 }
 .customer{
@@ -306,13 +308,13 @@ padding:20px 0px 20px 0px;
     color: rgb(49, 164, 164);
 }
 
-#section5 h2{
+#section-5 h2{
     color: black;
     text-decoration: underline;
     text-align: center;
     padding:20px 0px 20px 0px;
 }
-#section5{
+#section-5{
     padding: 0px 400px 0px 400px;
 }
 footer{
@@ -358,7 +360,7 @@ footer p{
 @media all and (max-width: 1324px)
 {
      
-    .header, #section1, #section2,#section3, #section4, #section5, footer{
+    .header, #section-1, #section-2,#section-3, #section-4, #section-5, footer{
         padding: 10px;
     } 
     nav
@@ -376,15 +378,6 @@ footer p{
         font-size: 1.1em;
     }
     
-    .sign-inn,.sign-upp{
-        flex-direction: column;
-      
-        font-size: 1em;
-    }
-    .sign-upp:last-child{
-        text-align: center;
-      
-    }
     .project{
         flex-direction: column;
         padding-left: 10px;
@@ -394,8 +387,6 @@ footer p{
     }
     .customer{
         flex-direction: column;
-        padding-left: 10px;
-        margin-left: 100px;
     }
     .customer1, .customer2, .customer3{
         margin-top: 20px;
@@ -407,32 +398,34 @@ footer p{
         width: 100%;
         margin: auto;
     }
-    .contact{
+    .ection-1_maps-addresse{
         display: none;
     }
-    .section2-2{
+    .section-2_2{
         display: inline-block;
-        margin-left: 100px;
+        margin-left: 200px;
     }
     #service{
         font-size: 20px;
         display: inline-block;
     }
-    .logo{
-        margin-left: 2px;
+    
+    #nav_connexion{
+        display: inline-block;
+      margin-left: 5px;
     }
 }
 @media all and (max-width: 900px)
 {
-.section2-1, .footer{
+.section-2_1, .footer{
     display: inline-block;
 }
-#section5,#section4, #section3, #section2, #section1, .header, footer{
+#section-5,#section-4, #section-3, #section-2, #section-1, .header, footer{
     padding: 0px 0px 0px 0px;
 }
-.sign-upp:last-child{
-    text-align: center;
-  
+.header_logo{
+    margin-left: 0px;
+    width: 80px;
+    height: 40px;
 }
-
 }
