@@ -398,7 +398,7 @@ footer p{
         width: 100%;
         margin: auto;
     }
-    .ection-1_maps-addresse{
+    .section-1_maps-addresse{
         display: none;
     }
     .section-2_2{
@@ -412,7 +412,7 @@ footer p{
     
     #nav_connexion{
         display: inline-block;
-      margin-left: 5px;
+        margin-left: 5px;
     }
 }
 @media all and (max-width: 900px)
@@ -427,5 +427,8 @@ footer p{
     margin-left: 0px;
     width: 80px;
     height: 40px;
+}
+.section-1_contacts{
+  display: none;
 }
 }
