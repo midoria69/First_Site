@@ -47,7 +47,7 @@ nav,li,a{
 }
 #section-1{
     height: 35rem;
-    background-image: url("./image/imagefond.png");
+    background-image: url("./image/imagefond1.webp");
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,6 @@ nav,li,a{
     padding: 0px 400px 0px 400px;
     color: #fff;
     font-size: 50px;
-    
 }
 #section-1 h2{
     padding-top: 130px;
