@@ -47,7 +47,7 @@ nav,li,a{
 }
 #section-1{
     height: 35rem;
-    background-image: url("./image/imagefond1.webp");
+    background-image: url("../image/imagefond1.webp");
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -62,6 +62,7 @@ nav,li,a{
 #section-1 h3{
     padding-top: 20px;
     padding-bottom: 10px;
+    color: white;
 }
 .section-1_contacts{
     display: flex;
@@ -75,11 +76,8 @@ nav,li,a{
     border: 2px solid white;
     border-radius: 200px;
     padding: 30px;
-    
-    
 }
 .section-1_mail-addresse{
-margin-left: 400px;
 width: 50px;
 height: 50px;
 border: 2px solid white;
@@ -88,7 +86,11 @@ padding: 30px;
 }
 
 .section-1_maps-addresse{
-    
+width: 50px;
+height: 50px;
+border: 2px solid white;
+border-radius: 200px;
+padding: 30px;
 }
 .section-1_call-addresse:hover, .section-1_maps-addresse:hover, .section-1_mail-addresse:hover{
     background-color: rgb(156, 154, 148);
